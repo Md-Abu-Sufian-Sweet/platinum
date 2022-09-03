@@ -1,0 +1,1312 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans:wght@300;400;500;600;700;800&family=RocknRoll+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.container{
+	overflow: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: rgb(33, 33, 18);
+	overflow-x: hidden;
+	transition: all 200ms linear 0s;
+}
+
+::selection {
+	color: rgb(255, 255, 255);
+	background-color: rgb(129, 103, 169);
+}
+
+.start-header {
+	opacity: 1;
+	transform: translateY(0px);
+	padding: 20px 0px;
+	box-shadow: rgba(138, 155, 165, 0.15) 0px 10px 30px 0px;
+	transition: all 0.3s ease-out 0s;
+}
+
+.start-header.scroll-on {
+	box-shadow: rgba(138, 155, 165, 0.15) 0px 5px 10px 0px;
+	padding: 10px 0px;
+	transition: all 0.3s ease-out 0s;
+}
+
+.start-header.scroll-on .navbar-brand img {
+	height: 24px;
+	transition: all 0.3s ease-out 0s;
+}
+
+.navigation-wrap {
+	position: sticky;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	transition: all 0.3s ease-out 0s;
+}
+
+.navbar {
+	padding: 0px;
+}
+
+.navbar-brand img {
+	height: 50px;
+	width: 85px;
+	display: block;
+	filter: brightness(100%);
+	transition: all 0.3s ease-out 0s;
+}
+
+.navbar-toggler {
+	float: right;
+	border: none;
+	padding-right: 0px;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+	outline: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+	width: 24px;
+	height: 17px;
+	background-image: none;
+	position: relative;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	transition: all 300ms linear 0s;
+}
+
+.navbar-light .navbar-toggler-icon::after,
+.navbar-light .navbar-toggler-icon::before {
+	width: 24px;
+	position: absolute;
+	height: 1px;
+	background-color: rgb(0, 0, 0);
+	top: 0px;
+	left: 0px;
+	content: "";
+	z-index: 2;
+	transition: all 300ms linear 0s;
+}
+
+.navbar-light .navbar-toggler-icon::after {
+	top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+	transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+	transform: translateY(8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+.nav-link {
+	font-weight: 500;
+	transition: all 200ms linear 0s;
+	text-transform: capitalize;
+	font-family: "RocknRoll One", sans-serif;
+	color: rgb(33, 33, 33) !important;
+}
+
+.nav-item:hover .nav-link {
+	color: rgb(129, 103, 169) !important;
+}
+
+.nav-item.active .nav-link {
+	color: rgb(119, 119, 119) !important;
+}
+
+.nav-link {
+	position: relative;
+	display: inline-block;
+	padding: 5px 0px !important;
+}
+
+.nav-item::after {
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+	content: "";
+	background-color: rgb(129, 103, 169);
+	opacity: 0;
+	transition: all 200ms linear 0s;
+}
+
+.nav-item:hover::after {
+	bottom: 0px;
+	opacity: 1;
+}
+
+.nav-item.active:hover::after {
+	opacity: 0;
+}
+
+.nav-item {
+	position: relative;
+	transition: all 200ms linear 0s;
+}
+
+.bg-light {
+	transition: all 200ms linear 0s;
+	background-color: rgb(255, 255, 255) !important;
+}
+
+.section {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+.full-height {
+	height: 100vh;
+}
+
+.over-hide {
+	overflow: hidden;
+}
+
+.absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	margin-top: 40px;
+	transform: translateY(-50%);
+	z-index: 20;
+}
+
+body.hero-anime p {
+	opacity: 0;
+	transform: translateY(40px);
+	transition-delay: 1700ms;
+}
+
+h1 span {
+	display: inline-block;
+	transition: all 300ms linear 0s;
+	opacity: 1;
+	transform: translate(0px);
+}
+
+body.hero-anime h1 span:nth-child(1) {
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+body.hero-anime h1 span:nth-child(2) {
+	opacity: 0;
+	transform: translateY(-30px);
+}
+
+body.hero-anime h1 span:nth-child(3) {
+	opacity: 0;
+	transform: translateY(-50px);
+}
+
+body.hero-anime h1 span:nth-child(4) {
+	opacity: 0;
+	transform: translateY(-10px);
+}
+
+body.hero-anime h1 span:nth-child(5) {
+	opacity: 0;
+	transform: translateY(-50px);
+}
+
+body.hero-anime h1 span:nth-child(6) {
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+body.hero-anime h1 span:nth-child(7) {
+	opacity: 0;
+	transform: translateY(-40px);
+}
+
+body.hero-anime h1 span:nth-child(8) {
+	opacity: 0;
+	transform: translateY(-10px);
+}
+
+body.hero-anime h1 span:nth-child(9) {
+	opacity: 0;
+	transform: translateY(-30px);
+}
+
+body.hero-anime h1 span:nth-child(10) {
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+h1 span:nth-child(1) {
+	transition-delay: 1000ms;
+}
+
+h1 span:nth-child(2) {
+	transition-delay: 700ms;
+}
+
+h1 span:nth-child(3) {
+	transition-delay: 900ms;
+}
+
+h1 span:nth-child(4) {
+	transition-delay: 800ms;
+}
+
+h1 span:nth-child(5) {
+	transition-delay: 1000ms;
+}
+
+h1 span:nth-child(6) {
+	transition-delay: 700ms;
+}
+
+h1 span:nth-child(7) {
+	transition-delay: 900ms;
+}
+
+h1 span:nth-child(8) {
+	transition-delay: 800ms;
+}
+
+h1 span:nth-child(9) {
+	transition-delay: 600ms;
+}
+
+h1 span:nth-child(10) {
+	transition-delay: 700ms;
+}
+
+body.hero-anime h1 span:nth-child(11) {
+	opacity: 0;
+	transform: translateY(30px);
+}
+
+body.hero-anime h1 span:nth-child(12) {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+body.hero-anime h1 span:nth-child(13) {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+body.hero-anime h1 span:nth-child(14) {
+	opacity: 0;
+	transform: translateY(30px);
+}
+
+body.hero-anime h1 span:nth-child(15) {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+h1 span:nth-child(11) {
+	transition-delay: 1300ms;
+}
+
+h1 span:nth-child(12) {
+	transition-delay: 1500ms;
+}
+
+h1 span:nth-child(13) {
+	transition-delay: 1400ms;
+}
+
+h1 span:nth-child(14) {
+	transition-delay: 1200ms;
+}
+
+h1 span:nth-child(15) {
+	transition-delay: 1450ms;
+}
+
+body.hero-anime #switch {
+	opacity: 0;
+	transform: translateY(40px);
+	transition-delay: 1900ms;
+}
+
+.nav-item .dropdown-menu {
+	transform: translate3d(0px, 10px, 0px);
+	visibility: hidden;
+	opacity: 0;
+	max-height: 0px;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	transition: all 200ms linear 0s;
+}
+
+.nav-item.show .dropdown-menu {
+	opacity: 1;
+	visibility: visible;
+	max-height: 999px;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.dropdown-menu {
+	margin: 0px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: rgb(33, 33, 33);
+	background-color: rgb(252, 250, 255);
+	border: none;
+	border-radius: 3px;
+	box-shadow: rgba(138, 155, 165, 0.15) 0px 5px 10px 0px;
+	transition: all 200ms linear 0s;
+	padding: 10px !important;
+	font-family: "RocknRoll One", sans-serif;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-item {
+	padding: 3px 15px;
+	color: rgb(33, 33, 33);
+	border-radius: 2px;
+	transition: all 200ms linear 0s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+	color: rgb(255, 255, 255);
+	background-color: #AB0C01;
+}
+
+body.dark {
+	color: rgb(255, 255, 255);
+	background-color: rgb(31, 32, 41);
+}
+
+body.dark .navbar-brand img {
+	filter: brightness(100%);
+}
+
+body.dark h1 {
+	color: rgb(255, 255, 255);
+}
+
+body.dark h1 span {
+	transition-delay: 0ms !important;
+}
+
+body.dark p {
+	color: rgb(255, 255, 255);
+	transition-delay: 0ms !important;
+}
+
+body.dark .bg-light {
+	background-color: rgb(20, 21, 26) !important;
+}
+
+body.dark .start-header {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px 0px;
+}
+
+body.dark .start-header.scroll-on {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px 0px;
+}
+
+body.dark .nav-link {
+	color: rgb(255, 255, 255) !important;
+}
+
+body.dark .nav-item.active .nav-link {
+	color: rgb(153, 153, 153) !important;
+}
+
+body.dark .dropdown-menu {
+	color: rgb(255, 255, 255);
+	background-color: rgb(31, 32, 41);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px 0px;
+}
+
+body.dark .dropdown-item {
+	color: rgb(255, 255, 255);
+}
+
+body.dark .navbar-light .navbar-toggler-icon {
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+body.dark .navbar-light .navbar-toggler-icon::after,
+body.dark .navbar-light .navbar-toggler-icon::before {
+	background-color: rgb(255, 255, 255);
+}
+
+body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 38px;
+	}
+
+	.nav-item::after {
+		display: none;
+	}
+
+	.nav-item::before {
+		position: absolute;
+		display: block;
+		top: 15px;
+		left: 0px;
+		width: 11px;
+		height: 1px;
+		content: "";
+		border: none;
+		background-color: rgb(0, 0, 0);
+		vertical-align: 0px;
+	}
+
+	.dropdown-toggle::after {
+		position: absolute;
+		display: block;
+		top: 10px;
+		left: -23px;
+		width: 1px;
+		height: 11px;
+		content: "";
+		border: none;
+		background-color: rgb(0, 0, 0);
+		vertical-align: 0px;
+		transition: all 200ms linear 0s;
+	}
+
+	.dropdown-toggle[aria-expanded="true"]::after {
+		transform: rotate(90deg);
+		opacity: 0;
+	}
+
+	.dropdown-menu {
+		background-color: transparent;
+		box-shadow: none;
+		transition: all 200ms linear 0s;
+		padding: 0px !important;
+	}
+
+	.dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
+		margin-top: 10px !important;
+		margin-bottom: 20px !important;
+	}
+
+	body.dark .nav-item::before {
+		background-color: rgb(255, 255, 255);
+	}
+
+	body.dark .dropdown-toggle::after {
+		background-color: rgb(255, 255, 255);
+	}
+
+	body.dark .dropdown-menu {
+		background-color: transparent;
+		box-shadow: none;
+	}
+}
+
+.logo {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	display: block;
+	z-index: 100;
+	transition: all 250ms linear 0s;
+}
+
+.logo img {
+	height: 26px;
+	width: auto;
+	display: block;
+	filter: brightness(10%);
+	transition: all 250ms linear 0s;
+}
+
+body.dark .logo img {
+	filter: brightness(100%);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+	color: rgb(170, 12, 2) !important;
+}
+
+.slider-section {}
+
+.slider-section .carousel-item img {
+	max-height: 500px;
+}
+
+.about-section {
+	background: rgba(51, 51, 51, 0.05);
+	padding-bottom: 35px;
+}
+
+.heading h1 {
+	text-align: center;
+	padding: 35px 0px;
+	text-transform: uppercase;
+	font-family: "RocknRoll One", sans-serif;
+}
+
+.about-photos {
+	position: relative;
+}
+
+.about-photos img {
+	max-width: 80%;
+}
+
+.about-contents {}
+
+.about-contents h4 {
+	color: rgb(178, 10, 0);
+	font-family: DynaPuff, cursive;
+	font-size: 17px;
+}
+
+.about-contents h1 {
+	text-align: initial;
+	font-family: "RocknRoll One", sans-serif;
+	font-size: 60px;
+	color: rgba(51, 51, 51, 0.86);
+}
+
+.about-contents p {
+	text-align: initial;
+	line-height: 1.8;
+	font-weight: 500;
+	color: rgba(51, 51, 51, 0.46);
+	margin: 15px 0px;
+}
+
+.about-photos img:last-child {
+	max-width: 65%;
+	border: 17px solid rgba(51, 51, 51, 0.28);
+	position: absolute;
+	bottom: -40px;
+	right: 0px;
+	width: 100%;
+}
+
+.about-contents a {
+	background: rgb(178, 10, 0);
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	padding: 10px 35px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin: 24px 0px;
+	display: inline-block;
+	transition-duration: 0.6s;
+}
+
+.about-contents a:hover {
+	background: rgb(51, 51, 51);
+	transform: translateY(-10px);
+}
+
+.why-section {}
+
+.item {
+	padding-left: 0px;
+	padding-right: 5px;
+}
+
+.item-card {
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+	position: relative;
+}
+
+.item-card-title {
+	font-size: 15px;
+	transition: all 1s ease 0s;
+	cursor: pointer;
+}
+
+.item-card-title i {
+	font-size: 15px;
+	transition: all 1s ease 0s;
+	cursor: pointer;
+	color: rgb(255, 167, 16);
+}
+
+.card-title i:hover {
+	transform: scale(1.25) rotate(100deg);
+	color: rgb(24, 212, 202);
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card-text {
+	height: 80px;
+}
+
+.card::before,
+.card::after {
+	position: absolute;
+	inset: 0px;
+	transform: scale3d(0, 0, 1);
+	transition: transform 0.3s ease-out 0s;
+	background: rgba(255, 255, 255, 0.1);
+	content: "";
+	pointer-events: none;
+}
+
+.card::before {
+	transform-origin: left top;
+}
+
+.card::after {
+	transform-origin: right bottom;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+	transform: scale3d(1, 1, 1);
+}
+
+.gellary  h6 a {
+	color: rgb(51, 51, 51);
+	text-transform: capitalize;
+	padding: 10px 25px;
+	background: rgb(245, 245, 245);
+	display: block;
+	font-family: "RocknRoll One", sans-serif;
+	margin: 0;
+	text-decoration: none;
+	transition-duration: 0.6s;
+	min-height: 65px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+.gellary  h6 a:hover{
+	
+background: #333;
+	
+color: #fff;
+	
+transform: translateY(-10px);
+}
+.card {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	margin-bottom: 35px;
+}
+
+.click-button a {
+	background: rgb(178, 10, 0);
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	padding: 10px 35px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin: 24px 0px;
+	display: inline-block;
+	transition-duration: 0.6s;
+}
+
+.click-button a:hover {
+	background: rgb(51, 51, 51);
+	transform: translateY(-10px);
+}
+
+.product-section {
+	margin: 35px 0 0 0;
+	background: rgb(245, 245, 245);
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+
+#owl-demo .item {
+	margin: 3px;
+}
+
+#owl-demo .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.client-section {
+    padding-bottom: 35px;
+}
+
+
+
+
+
+/* footer */
+footer {
+
+background: #333333de;
+
+padding: 35px 0;
+}
+
+.logo-part {}
+
+.logo-part p {
+
+	color: #fff;
+
+	font-size: 14px;
+}
+
+.logo-part img {
+
+max-width: 100px;
+}
+
+.logo-part ul {}
+.logo-part ul li {}
+.logo-part ul li a {
+    text-decoration: none;
+}
+.logo-part ul li a i  {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 20px;
+    background: #333;
+    padding: 5px 15px;
+    display: block;
+    transition-duration: 0.6s;
+}
+.logo-part ul li a i:hover{color: #0095ff;background: #fff;}
+.links{
+}
+.links ul{
+list-style: none;
+}
+.links  h3{color: #fff;text-transform: uppercase;padding-bottom: 10px;margin: 0;padding: 0;margin-bottom: 20px;}
+.links ul li{margin-bottom: 15px;}
+.links ul li i{
+color: #fff;
+}
+.links ul li  a{	
+color: #fff;	
+margin-left: 5px;	
+text-decoration: none;
+}
+.map{
+
+}
+.map h3{
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 20px;
+}
+.footer-last-part{/* padding: 5px 0; */}
+.footer-last-part ul{}
+.footer-last-part ul li{display: flex;margin-bottom: 5px;}
+.footer-last-part ul li strong{color: #fff;text-transform: capitalize;margin-right: 10px;font-size: 14px;}
+.footer-last-part ul li p{	
+color: #fff;
+text-transform: capitalize;
+}
+.footer-two{
+background: #72727275;
+}
+.contact{
+
+background: #b1221b;
+}
+.email{
+	
+background: #333;
+}
+.fa-youtube:before {
+    content: "\f167";
+    color: #FF0303;
+}
+.fa-facebook-f:before {
+    content: "\f39e";
+    color: #00adff;
+}
+.fa-google-plus-g:before {
+    content: "\f0d5";
+    color: #EA4335;
+}
+.fa-twitter:before {
+    content: "\f099";
+    color: #3cc9ff;
+}
+
+
+/* scroll-top */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.btn-danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(178, 10, 0);
+    border-color: rgb(178, 10, 0);
+}
+
+/* scroll-top */
+.contact-section{
+	background: linear-gradient(rgb(104 100 100 / 70%), rgb(0 0 0 / 70%)),url(../images/slide2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 100px;
+}
+.contact-section h1{
+	text-align: center;
+	padding: 35px 0px;
+	text-transform: uppercase;
+	font-family: "RocknRoll One", sans-serif;
+	color: #fff;
+}
+
+
+
+/* contact-form */
+
+.get-in-touch {
+	max-width: 800px;
+	margin: 50px auto;
+	position: relative;
+  
+  }
+  .get-in-touch .title {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 3.2em;
+	line-height: 48px;
+	padding-bottom: 48px;
+	   color: #5543ca;
+	  background: #5543ca;
+	  background: -moz-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+	  background: -webkit-linear-gradient(left,#f4524d  0%,#5543ca 100%) !important;
+	  background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important;
+	  -webkit-background-clip: text !important;
+	  -webkit-text-fill-color: transparent !important;
+  }
+  
+  .contact-form .form-field {
+	position: relative;
+	margin: 32px 0;
+  }
+  .contact-form .input-text {
+	display: block;
+	width: 100%;
+	height: 36px;
+	border-width: 0 0 2px 0;
+	border-color: #5543ca;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+	outline: none;
+  }
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text.not-empty + .label {
+	-webkit-transform: translateY(-24px);
+			transform: translateY(-24px);
+  }
+  .contact-form .label {
+	position: absolute;
+	left: 20px;
+	bottom: 11px;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #5543ca;
+	cursor: text;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out, 
+	-webkit-transform .2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+	display: inline-block;
+	background-color: #000;
+	 background-image: linear-gradient(125deg,#a72879,#064497);
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	padding: 8px 16px;
+	border: none;
+	width:200px;
+	cursor: pointer;
+  }
+  
+  
+/* contact-form */
+
+/* about */
+.banner-image{
+	background-image: url(../images/13.jpg);
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.about-content{
+
+}
+.about-content h1{
+
+text-transform: capitalize;
+
+font-family: "RocknRoll One", sans-serif;
+
+font-weight: 700;
+
+font-size: 40px;
+
+padding: 25px 0;
+
+text-align: center;
+}
+.about-content p{
+
+text-align: justify;
+
+margin: 0 75px 35px 75px;
+}
+/* about */
+.about-contents h2{
+
+text-transform: capitalize;
+
+background: #07ad7f;
+
+font-style: oblique;
+
+color: #fff;
+
+border-top-right-radius: 50px;
+
+border-bottom-right-radius: 50px;
+
+font-family: "RocknRoll One", sans-serif;
+
+padding: 5px;
+}
+.contents-all{
+	
+margin: 0px 0 85px 0px;
+}
+/* product */
+.pd-wrap {
+	padding: 40px 0;
+	font-family: 'Poppins', sans-serif;
+}
+.heading-section {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.sub-heading {
+	font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    display: block;
+    font-weight: 600;
+    color: #2e9ca1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.heading-section h2 {
+	font-size: 35px;
+	font-weight: 500;
+	padding-bottom: 15px;
+	font-family: "RocknRoll One", sans-serif;
+}
+.user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+	min-width: 80px;
+	background-size: 100%;
+}
+.carousel-testimonial .item {
+	padding: 30px 10px;
+}
+.quote {
+	position: absolute;
+    top: -23px;
+    color: #2e9da1;
+    font-size: 27px;
+}
+.name {
+	margin-bottom: 0;
+    line-height: 14px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.position {
+	color: #adadad;
+	font-size: 14px;
+}
+.owl-nav button {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	outline: none;
+	height: 25px;
+}
+.owl-nav button svg {
+	width: 25px;
+	height: 25px;
+}
+.owl-nav button.owl-prev {
+	left: 25px;
+}
+.owl-nav button.owl-next {
+	right: 25px;
+}
+.owl-nav button span {
+	font-size: 45px;
+}
+.product-thumb .item img {
+	height: 100px;
+}
+.product-name {
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 4px;
+	font-family: "RocknRoll One", sans-serif;
+	padding-bottom: 10px;
+}
+.product-price-discount {
+	font-size: 22px;
+    font-weight: 400;
+    padding: 10px 0;
+    clear: both;
+}
+.product-price-discount span.line-through {
+	text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #a5a5a5;
+}
+.display-flex {
+	display: flex;
+}
+.align-center {
+	align-items: center;
+}
+.product-info {
+	width: 100%;
+}
+.reviews-counter {
+    font-size: 13px;
+    padding: 5px 0;
+}
+.reviews-counter span {
+	vertical-align: -2px;
+}
+.rate {
+    float: left;
+    padding: 0 10px 0 0;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float: right;
+    width: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 21px;
+    color:#ccc;
+	margin-bottom: 0;
+	line-height: 21px;
+}
+.rate:not(:checked) > label:before {
+    content: '\2605';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.product-dtl p {
+	font-size: 15px;
+	line-height: 24px;
+	color: #7a7a7a;
+}
+.product-dtl .form-control {
+	font-size: 15px;
+}
+.product-dtl label {
+	line-height: 16px;
+	font-size: 15px;
+}
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+.product-count {
+	margin-top: 15px; 
+}
+.product-count .qtyminus,
+.product-count .qtyplus {
+	width: 34px;
+    height: 34px;
+    background: #212529;
+    text-align: center;
+    font-size: 19px;
+    line-height: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+.product-count .qtyminus {
+	border-radius: 3px 0 0 3px; 
+}
+.product-count .qtyplus {
+	border-radius: 0 3px 3px 0; 
+}
+.product-count .qty {
+	width: 60px;
+	text-align: center;
+}
+.round-black-btn {
+	border-radius: 4px;
+    background: #212529;
+    color: #fff;
+    padding: 7px 45px;
+    display: inline-block;
+    margin-top: 20px;
+    border: solid 2px #212529; 
+    transition: all 0.5s ease-in-out 0s;
+}
+.round-black-btn:hover,
+.round-black-btn:focus {
+	background: transparent;
+	color: #212529;
+	text-decoration: none;
+}
+
+.product-info-tabs {
+	margin-top: 25px; 
+}
+.product-info-tabs .nav-tabs {
+	border-bottom: 2px solid #d8d8d8;
+}
+.product-info-tabs .nav-tabs .nav-item {
+	margin-bottom: 6px;
+}
+.product-info-tabs .nav-tabs .nav-link {
+	border: none;
+	border-bottom: 2px solid transparent;
+	color: #323232;
+	margin-right: 15px;
+}
+.product-info-tabs .nav-tabs .nav-item .nav-link:hover {
+	border: none; 
+}
+.product-info-tabs .nav-tabs .nav-item.show .nav-link, 
+.product-info-tabs .nav-tabs .nav-link.active, 
+.product-info-tabs .nav-tabs .nav-link.active:hover {
+	border: none;
+	font-weight: bold;
+}
+.product-info-tabs .tab-content .tab-pane {
+	padding: 30px 20px;
+	font-size: 15px;
+	line-height: 24px;
+	color: #7a7a7a;
+}
+.review-form .form-group {
+	clear: both;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.review-form .rate {
+	float: none;
+	display: inline-block;
+}
+.review-heading {
+	font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: #000;
+}
+.review-form .form-control {
+	font-size: 14px;
+}
+.review-form input.form-control {
+	height: 40px;
+}
+.review-form textarea.form-control {
+	resize: none;
+}
+.review-form .round-black-btn {
+	text-transform: uppercase;
+	cursor: pointer;
+}
+/* product */
+.gellary h6{
+}
+.why-contents{
+	
+}

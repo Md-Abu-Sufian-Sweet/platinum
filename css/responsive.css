@@ -1,0 +1,70 @@
+@media(max-width:1199px) {
+   
+}
+
+@media(max-width:991px) {
+    
+}
+
+
+
+
+
+@media(max-width:768px) {
+  
+}
+
+
+
+
+
+
+@media(max-width:576px) {
+    .about-contents {
+        margin-top: 75px;
+    }
+    .about-contents h1 {   
+        font-size: 40px;
+      
+    }
+    .about-contents {
+        text-align: center;
+    }
+    .why-contents {
+        margin: 0!important;
+    }
+    .why-contents p{
+
+margin: 0;
+
+}
+    .about-photos img {
+        margin-top: 10px;
+    }
+    .card {
+        margin: 0 35px 35px 35px;
+    }
+    .links h3 {
+        margin-top: 25px;
+    }
+    .get-in-touch {
+        margin: 50px 55px;
+        text-align: center;
+    }
+    .get-in-touch .title {
+        font-size: 35px;
+}
+.heading h1 {
+    font-size: 30px;
+}
+.product-name {
+    text-align: center;
+    margin: 15px 0;
+}
+.about-content p {
+    margin: 0 45px 35px 45px;
+}
+.about-content h1 {
+    font-size: 22px;
+}
+}
